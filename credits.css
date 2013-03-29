@@ -1,0 +1,48 @@
+
+
+#CreditsWall{
+	float: right;
+	height: 100%;
+	width: 100%;
+
+}
+
+#Title{
+	position:absolute;
+	top:-5%;
+	left:40%;
+	font-size: 90px;
+	color: #000066;
+}
+
+#cloud{
+	position:absolute;
+	top:30%;
+	left:15%;
+	width: 70%;
+	height: 80%;
+} 
+
+#textWindow{
+	position:absolute; 
+	top:53%;
+	left:25%;
+	width:45%; 
+	height:40%; 
+	 border-width:2px; 
+}
+
+#text{
+	position:absolute;
+	width:170;
+	left:5;
+	top:100
+}
+
+#back{
+	position:absolute;
+	top:90%;
+	left:3%;
+	width: 20%;
+	height:20%;
+}

@@ -1,0 +1,52 @@
+
+
+#MainWall{
+	float: right;
+	height:100%;
+	width: 100%;
+
+}
+
+#CanvasI{
+	border: 1px solid #9C8989;
+
+}
+
+#red_button{
+	position:absolute;
+	top: 30px;
+	left: 30px;
+	width: 10%;
+	height: 10%;
+
+}
+
+#credits{
+	position:absolute;
+	top:80%;
+	left:3%;
+	width: 30%;
+	height: 30%;
+}
+
+#how_to{
+	position:absolute;
+	top:50%;
+	left:3%;
+	width: 30%;
+	height: 30%;
+}
+
+#start_game{
+	position:absolute;
+	top:20%;
+	left:3%;
+	width: 30%;
+	height: 30%;
+}
+
+.menu{
+	float:right;
+	min-height:500px;
+}
+
