@@ -1,0 +1,76 @@
+<!Doctype html>
+
+<html>
+	<head>
+
+		<title>Credits</title>
+		<link rel="stylesheet" href="credits.css" type="text/css" />
+		
+	</head>
+
+	<body onload = "playMusic()">
+	
+			<section>
+					<!-- music-->
+				<audio src="music/Avicii - Levels.mp3" id="music" preload="auto"></audio>
+					
+					<script type="text/javascript">
+									function playMusic(){
+									document.getElementById("music").play();
+									}
+					</script>
+				</section>	
+				
+	
+		<section>
+		
+		
+				<canvas id="canvasTitle" height="100" width="500">
+								<script>
+													  var canvasT = document.getElementById('canvasTitle');
+													  var context = canvasT.getContext('2d');
+													  
+													  var text = "Credits";		//title
+													   context.font = "100px stephen"; // Change the size and font
+														context.fillStyle = '#00CC00';
+													   context.fillText(text, 70, 100);
+								</script>
+			</canvas>
+	
+				<canvas id="canvasText" height="600" width="800">
+									<script>
+														var Txt = document.getElementById('canvasText');
+														var ctxTxt = Txt.getContext("2d");
+														var imgTxt= new Image();										
+														imgTxt.src = 'img/svituk.jpg';											
+														imgTxt.addEventListener('load',loadTxt,false);	
+														
+														function loadTxt(){
+															ctxTxt.drawImage(imgTxt, 30,20,500,600);  				//context.drawImage(img,place,place,size,size);
+															}
+													  
+									</script>
+		</canvas>
+						
+				<canvas id="canvasBButton" height="170" width="300" onclick="BB()">
+								<script>
+												
+														var BButton = document.getElementById('canvasBButton');
+														var ctxBB = BButton.getContext("2d");
+														
+														var textBb = "Back";
+															ctxBB.font = "100px stephen";
+															ctxBB.fillStyle = '#00CC00';
+															ctxBB.fillText(textBb,70 ,100);
+														
+																function BB(){
+																	window.open ("mainPage.html","_self");		//open new html file
+																};
+													
+								</script>
+		</canvas>
+	
+
+			</section>
+	</body>
+</html>

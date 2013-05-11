@@ -1,0 +1,112 @@
+<!Doctype html>
+<html>
+	<head>
+				<title>How to play</title>
+				<link rel="stylesheet" href="help.css" type="text/css" />
+	</head>
+
+	<body onload = "playMusic()" >
+	
+				<section>
+					<!-- music-->
+					<audio src="music/Avicii - Levels.mp3" id="music" preload="auto"></audio>
+					
+					<script type="text/javascript">
+									function playMusic(){
+									document.getElementById("music").play();
+									}
+	
+					</script>
+			</section>
+	
+	
+		<section>
+		
+			<canvas id="canvasTitle" height="100" width="500">
+				<script>
+									  var canvasT = document.getElementById('canvasTitle');
+									  var ctxT = canvasT.getContext('2d');
+									  
+									  var text = "How to play";			   //title
+									   ctxT.font = "100px stephen"; // Change the size and font
+									   ctxT.fillStyle = '#00CC00';
+									   ctxT.fillText(text, 50, 60);
+				</script>
+			</canvas>
+	
+			<canvas id="canvasHelp" height="550" width="350">
+									<script>
+									//Word Wrap text
+									
+									  function wrapText(context, text, x, y, maxWidth, lineHeight) {
+													var words = text.split(' ');
+													var line = '';
+
+													for(var n = 0; n < words.length; n++) {
+													  var testLine = line + words[n] + ' ';
+													  var metrics = context.measureText(testLine);
+													  var testWidth = metrics.width;
+													  if(testWidth > maxWidth) {
+														context.fillText(line, x, y);
+														line = words[n] + ' ';
+														y += lineHeight;
+													  }
+													  else {
+														line = testLine;
+													  }
+													}
+													context.fillText(line, x, y);
+									  }
+		 
+									  //end of Word Wrap text
+									  
+									  var canvas = document.getElementById('canvasHelp');
+									  var context = canvas.getContext('2d');
+									  var maxWidth = 330;
+									  var lineHeight = 25;
+									  var x = (canvas.width - maxWidth) / 2;
+									  var y = 60;
+									  var text = 'The aim of the game is to kill all enemies planes without letting them to go through the entire field. How to control your plane?                     			 -YELLOW key move your plane UP -GREEN key move your plane LEFT -BLUE key move your plane DOWN   	 - RED key move your plane RIGHT       - PINK key is for SHOOTING -------------------------------------------------- Kill as many as possible to get a higher score. GOOD LUCK.';
+
+									  context.font = '16pt Calibri';
+									  context.fillStyle = '#333';
+
+									  wrapText(context, text, x, y, maxWidth, lineHeight);
+									</script>
+			</canvas>
+	
+			<canvas	id="canvasPic" height="350" width="550"> 
+					<script>	
+									var Keyb= document.getElementById('canvasPic');
+									var ctxKeyb = Keyb.getContext("2d");
+									var imgKeyb= new Image();										
+									imgKeyb.src = 'img/keyboard.png';											
+									imgKeyb.addEventListener('load',loadKB,false);	
+									
+											function loadKB(){
+											ctxKeyb.drawImage(imgKeyb,0, 0);  				//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+											}
+						</script>
+			</canvas>
+			
+			<canvas id="canvasBbutton" height="170" width="500" onclick="Bb()">
+					<script>
+							
+									var Bbutton = document.getElementById('canvasBbutton');
+									var ctxBb = Bbutton.getContext("2d");
+									
+									var textB = "Back";			   //title
+									   ctxBb.font = "100px stephen"; // Change the size and font
+									   ctxBb.fillStyle = '#00CC00';
+									   ctxBb.fillText(textB, 50, 60);
+									
+									function Bb(){
+												window.open ("index.html","_self");		//open new html file
+									};						
+				</script>
+		</canvas>
+		
+        </section>
+		
+	</body>
+</html>

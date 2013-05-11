@@ -1,0 +1,40 @@
+
+
+<!Doctype html>
+<html lang="en">
+<head>
+	<title>Start game</title>
+	<link rel="stylesheet" href="game.css" type="text/css" />
+</head>
+
+<body onload = "playMusic()">
+
+						<input type="button" value="Reload Page" onClick="window.location.reload()">
+
+						<audio src="fire.mp3" id="mp3" preload="auto"></audio>
+						<audio src="hard.mp3" id="music" preload="auto"></audio>
+					
+					<script type="text/javascript">
+									function playMusic(){
+									document.getElementById("music").play();
+									}
+					</script>
+				
+					
+
+		<section>
+					
+				<canvas id="canvasBg" width="800" height="500" ></canvas>
+				<canvas id="canvasEnemy" width="800" height="500" ></canvas>
+				<canvas id="canvasJet" width="800" height="500" ></canvas>
+				<canvas id="canvasHUD" width="800" height="500" ></canvas>
+				<script src="game.js"></script>
+		<section>
+		
+		
+		
+</body>
+</html>
+
+
+

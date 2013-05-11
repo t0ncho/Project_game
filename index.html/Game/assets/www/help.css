@@ -1,0 +1,44 @@
+body{
+	background:#CCFFFF
+}
+
+
+
+#canvasHelp{
+	display:block;
+	/*background: #33CC33;	*/	/*test collor*/
+	position: absolute; 
+	left: 55%; 
+	top: 5%;
+	type: round;
+
+}
+
+#canvasTitle{
+	display:block;
+	
+	position: absolute; 
+	left: 5%; 
+	top: 5%;
+	type: round;
+}
+
+#canvasPic{
+	display:block;
+	/*background: #33CC33;*/		/*test collor*/
+	position: absolute; 
+	left: 5%; 
+	top: 25%;
+	type: round;
+
+}
+
+#canvasBbutton{
+	display:block;
+	/*background: #33CC33;*/		/*test collor*/
+	position: absolute; 
+	left: 5%; 
+	top: 80%;
+	type: round;
+
+}

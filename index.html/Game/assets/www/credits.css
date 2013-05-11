@@ -1,0 +1,23 @@
+body{
+		background:#CCFFFF
+}
+
+#canvasText{
+display:block;
+	/*background: #33CC33;*/		/*test collor*/
+	position: absolute; 
+	left: 30%; 
+	top: 	0%;
+	type: round;
+
+}
+
+#canvasBButton{
+display:block;
+	/*background: #33CC33;*/		/*test collor*/
+	position: absolute; 
+	left: 5%; 
+	top: 75%;
+	type: round;
+
+}

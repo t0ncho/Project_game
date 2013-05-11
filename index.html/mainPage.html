@@ -1,0 +1,107 @@
+<!--
+480 x 800 px telephone resolution.
+1343x731 px wallpaper resolution.
+Avicii - Levels , Avicii & Nicky Romero - I Could Be The One
+-->
+
+<!Doctype html>
+
+<html>
+	<head>
+		<title>Home page</title>
+		<link rel="stylesheet" href="main.css" type="text/css" />
+	</head>
+	<body onload = "playMP3()">
+				
+			<section>
+				<!-- music-->
+				<audio src="music/Ellie Goulding - Figure 8.mp3" id="mp3" preload="auto"></audio>
+					
+					<script type="text/javascript">
+									function playMP3(){
+									document.getElementById("mp3").play();
+									}
+					</script>
+					<!-- music-->
+			</section>
+					
+			<section>
+					<!--<canvas id="canvasBG">
+					<script>   	              
+									var BG = document.getElementById('canvasBG');
+									var ctxBG= BG.getContext("2d");
+									//var imgBG = new Image();										
+									//imgBG.src = 'img/asd.png';											
+									//imgBG.addEventListener('load',loadBG,false);	
+									
+											//function loadBG(){
+												//ctxBG.drawImage(imgBG,0, 0);  				//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+											//}
+									
+								
+							</script>
+					</canvas> -->
+			
+					<canvas id="canvasSG" width="600" height="150" onclick = "s()" >		
+							<script>																						
+							
+									var start = document.getElementById('canvasSG');
+									var ctxStart = start.getContext("2d");
+									var imgSG = new Image();										
+									imgSG.src = 'img/start.png';											
+									imgSG.addEventListener('load',loadStart,false);	
+									
+											function loadStart(){
+												ctxStart.drawImage(imgSG,10, -20);  				//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+											}
+									
+											function s(){
+												window.open ("srcPlane/start_game.html","_self");		//open new html file
+											};
+								
+							</script>
+					</canvas>
+					
+					<canvas id="canvasHelp" width="700" height="100" onclick = "h()">
+							<script>
+							
+									var howTo = document.getElementById('canvasHelp');
+									var ctxH = howTo.getContext("2d");
+									var imgH = new Image();										
+									imgH.src = 'img/help.png';											
+									imgH.addEventListener('load',loadH,false);	
+									
+											function loadH(){
+												ctxH.drawImage(imgH, 0, -20);  				//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+											}
+									
+											function h(){
+												window.open ("help.html","_self");		//open new html file
+											};
+								
+							</script>
+					</canvas>
+					
+					<canvas id="canvasCredits" width="600" height="150" onclick = "c()">
+								<script>
+							
+									var howTo = document.getElementById('canvasCredits');
+									var ctxC = howTo.getContext("2d");
+									var imgC = new Image();										
+									imgC.src = 'img/Credits2.png';											
+									imgC.addEventListener('load',loadC,false);	
+									
+											function loadC(){
+												ctxC.drawImage(imgC, 0, -20);  				//context.drawImage(img,sx,sy,swidth,sheight,x,y,width,height);
+											}
+									
+											function c(){
+												window.open ("credits.html","_self");		//open new html file
+											};
+								
+							</script>		
+					</canvas>
+					
+			</section>
+	</body>
+</html>
