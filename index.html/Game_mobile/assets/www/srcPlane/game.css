@@ -1,0 +1,29 @@
+
+
+body{
+	background:#CCFFFF;
+}
+
+#canvasBg{
+	display:block;
+	background:#ffffff;
+	margin:100px auto 0px;
+
+}
+
+#canvasJet{
+	display:block;
+	margin:-500px auto 0px;
+
+}
+
+#canvasEnemy{
+	display:block;
+	margin:-500px auto 0px;
+
+} 
+ 
+ #canvasHUD{
+	display:block;
+	margin:-500px auto 0px;
+ }
